@@ -1,0 +1,35 @@
+[33mcommit f08e7824cba922505acb7625f4e41afa957eaf89[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mcategory_service[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Pratap Shishodia <shishodiapratap24@gmail.com>
+Date:   Wed Oct 14 17:38:49 2026 +0530
+
+    Finished Basic User Service
+
+[33mcommit e86898be36e187644b0b62a3406d46edde7aed9c[m
+Author: Pratap Shishodia <shishodiapratap24@gmail.com>
+Date:   Wed Oct 14 17:38:02 2026 +0530
+
+    Add public paths in Security and JWT Filter
+
+[33mcommit 6f0570cf5e27453c090dcdb56a2f0975e23b060f[m
+Author: Pratap Shishodia <shishodiapratap24@gmail.com>
+Date:   Wed Oct 14 15:49:52 2026 +0530
+
+    Add Security and JWT Filter
+
+[33mcommit 64c2e01b4ef419cfd9fa5af73fcbcdc99631ea2f[m
+Author: Pratap Shishodia <shishodiapratap24@gmail.com>
+Date:   Tue Oct 13 18:43:11 2026 +0530
+
+    Add user service implementation and configuration
+
+[33mcommit e5721d352d496b099c4d8f105bf6b1c1cceb0012[m
+Author: Pratap Shishodia <shishodiapratap24@gmail.com>
+Date:   Tue Oct 13 17:26:43 2026 +0530
+
+    Initialize backend
+
+[33mcommit 44664784e50b0d5e0bdbb33e238f1ba63c2a9b2c[m
+Author: Pratap Shishodia <shishodiapratap24@gmail.com>
+Date:   Tue Oct 13 17:24:27 2026 +0530
+
+    Initial commit
