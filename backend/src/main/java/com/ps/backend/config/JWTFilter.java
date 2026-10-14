@@ -31,8 +31,12 @@ public class JWTFilter extends OncePerRequestFilter {
         String path = request.getServletPath();
         System.out.println("Incoming request: " + request.getServletPath());
         log.debug("Incoming request: {}", request.getServletPath());
-        return pathMatcher.match("/api/signup", path)
-                || pathMatcher.match("/api/login", path);
+        return pathMatcher.match("/api/user/resetPassword", path)
+                || pathMatcher.match("/api/user/send-otp", path)
+                || pathMatcher.match("/api/user/verify-otp", path)
+                || pathMatcher.match("/api/user/resetPassword", path)
+                || pathMatcher.match("/api/auth/signup", path)
+                || pathMatcher.match("/api/auth/login", path);
     }
 
     @Override
