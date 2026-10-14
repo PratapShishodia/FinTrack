@@ -17,6 +17,6 @@ public interface UserService {
     String updatePassword(UpdatePasswordDTO requestDTO);
     String verifyOTP(String email, String OTP);
     String resetPassword(String email, UpdatePasswordDTO requestDTO);
-    Boolean sendActivationLink(UUID userId);
+    void sendActivationLink(UUID userId);
     Boolean logout(HttpServletRequest request);
 }
