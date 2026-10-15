@@ -29,14 +29,13 @@ public class JWTFilter extends OncePerRequestFilter {
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
         String path = request.getServletPath();
-        System.out.println("Incoming request: " + request.getServletPath());
-        log.debug("Incoming request: {}", request.getServletPath());
-        return pathMatcher.match("/api/user/resetPassword", path)
-                || pathMatcher.match("/api/user/send-otp", path)
-                || pathMatcher.match("/api/user/verify-otp", path)
-                || pathMatcher.match("/api/user/resetPassword", path)
-                || pathMatcher.match("/api/auth/signup", path)
-                || pathMatcher.match("/api/auth/login", path);
+        System.out.println("Incoming request: " +path);
+        log.debug("Incoming request: {}", path);
+        return pathMatcher.match("/user/resetPassword", path)
+                || pathMatcher.match("/user/send-otp", path)
+                || pathMatcher.match("/user/verify-otp", path)
+                || pathMatcher.match("/auth/signup", path)
+                || pathMatcher.match("/auth/login", path);
     }
 
     @Override

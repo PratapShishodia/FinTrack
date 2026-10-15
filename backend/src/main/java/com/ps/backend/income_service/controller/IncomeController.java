@@ -32,7 +32,7 @@ public class IncomeController {
         return ResponseEntity.ok(incomeService.getAllByUserId(userId));
     }
 
-    @GetMapping("/{userId}}")
+    @GetMapping("/category/{userId}")
     public ResponseEntity<List<IncomeResponseDTO>> getAllByUserId(@PathVariable UUID userId,@RequestParam Long categoryId){
         return ResponseEntity.ok(incomeService.getAllByUserIdAndCategoryId(userId,categoryId));
     }

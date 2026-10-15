@@ -32,7 +32,7 @@ public class ExpenseController {
         return ResponseEntity.ok(expenseService.getAllByUserId(userId));
     }
 
-    @GetMapping("/{userId}}")
+    @GetMapping("/category/{userId}")
     public ResponseEntity<List<ExpenseResponseDTO>> getAllByUserId(@PathVariable UUID userId, @RequestParam Long categoryId){
         return ResponseEntity.ok(expenseService.getAllByUserIdAndCategoryId(userId,categoryId));
     }
