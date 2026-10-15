@@ -10,6 +10,7 @@ public class IncomeDTOMapper {
                 .incomeId(income.getIncomeId())
                 .name(income.getName())
                 .amount(income.getAmount())
+                .userId(income.getUserId())
                 .categoryId(income.getCategoryId())
                 .date(income.getDate())
                 .icon(income.getIcon())
@@ -20,6 +21,7 @@ public class IncomeDTOMapper {
         return Income.builder()
                 .name(requestDTO.getName())
                 .amount(requestDTO.getAmount())
+                .userId(requestDTO.getUserId())
                 .categoryId(requestDTO.getCategoryId())
                 .icon(requestDTO.getIcon())
                 .build();
