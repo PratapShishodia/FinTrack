@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-const savedTheme = localStorage.getItem("theme") || "dark";
+const savedTheme = localStorage.getItem("theme") || "light";
 
 if (savedTheme === "dark") {
   document.documentElement.classList.add("dark");
