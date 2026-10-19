@@ -1,0 +1,35 @@
+Base URL: http://localhost:8090/api
+
+Category Service
+GET - http://localhost:8090/api/category
+GET - http://localhost:8090/api/category/{type} - Path variable: type (INCOME or EXPENSE)
+POST - http://localhost:8090/api/category - {categoryName:test,icon:icon-name,categoryType:INCOME}
+PUT - http://localhost:8090/api/category?categoryId=1 - {categoryName:test,icon:icon-name,categoryType:INCOME}
+DELETE - http://localhost:8090/api/category?categoryId=1
+
+Expense Service
+POST - http://localhost:8090/api/expense - {name:Lunch,amount:250.00,userId:00000000-0000-0000-0000-000000000000,categoryId:1,date:2026-10-15,icon:food}
+DELETE - http://localhost:8090/api/expense/{expenseId}
+GET - http://localhost:8090/api/expense/{userId} - Path variable: userId (UUID)
+GET - http://localhost:8090/api/expense/category/{userId}?categoryId=1 - Path variable: userId (UUID)
+
+Income Service
+POST - http://localhost:8090/api/income - {name:Salary,amount:50000.00,userId:00000000-0000-0000-0000-000000000000,categoryId:1,date:2026-10-15,icon:salary}
+DELETE - http://localhost:8090/api/income/{incomeId}
+GET - http://localhost:8090/api/income/{userId} - Path variable: userId (UUID)
+GET - http://localhost:8090/api/income/category/{userId}?categoryId=1 - Path variable: userId (UUID)
+
+Authentication Service
+POST - http://localhost:8090/api/auth/signup - {firstName:John,lastName:Doe,email:john@example.com,phoneNumber:9876543210,password:Password@123,profilePic:profile.jpg}
+POST - http://localhost:8090/api/auth/login - {email:john@example.com,password:Password@123}
+PUT - http://localhost:8090/api/auth/logout
+
+User Service
+GET - http://localhost:8090/api/user/getme
+POST - http://localhost:8090/api/user/activate?token=activation-token
+POST - http://localhost:8090/api/user/send-otp?email=john@example.com
+PATCH - http://localhost:8090/api/user/uploadPic/{userId} - multipart/form-data: file=<image-file>
+PUT - http://localhost:8090/api/user/update - {firstName:John,lastName:Doe,email:john@example.com,phoneNumber:9876543210,password:Password@123,profilePic:profile.jpg}
+PUT - http://localhost:8090/api/user/udpatePassword - {oldPassword:OldPassword@123,newPassword:NewPassword@123}
+POST - http://localhost:8090/api/user/verify-otp?email=john@example.com&OTP=123456
+PUT - http://localhost:8090/api/user/resetPassword?email=john@example.com - {oldPassword:OldPassword@123,newPassword:NewPassword@123}
